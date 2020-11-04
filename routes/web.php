@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/test', 'ScrapperController@test');
+Route::get('/api/{date}', 'ApiController@fetchByDate');
