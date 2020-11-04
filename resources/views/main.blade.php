@@ -23,7 +23,7 @@
                             </div>
                         <li class="sub-item">Asia</li>
                             <div class="collapse" id="asia">
-                                <li class="mini-sub-item">asdasd</li>
+                                <li class="mini-sub-item">aaaa</li>
                                 
                             </div>
                         <li class="sub-item">Europe</li>
