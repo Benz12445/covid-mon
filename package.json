@@ -23,6 +23,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "admin-lte": "^3.0.5"
+        "admin-lte": "^3.0.5",
+        "countries-list": "^2.5.6"
     }
 }

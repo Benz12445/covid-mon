@@ -18,6 +18,10 @@
   font-size: 42pt;
 }
 
+.txt-light {
+  color: #f7f7f7;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -10940,6 +10944,15 @@ body {
   padding-left: 0.5rem;
 }
 
+.nav-container a {
+  text-decoration: none;
+  color: #0f0f0f;
+}
+
+.nav-container a:hover {
+  color: #707070;
+}
+
 .nav-container .sidebar-ul {
   list-style: none;
   padding-left: 10%;
@@ -10947,6 +10960,14 @@ body {
 
 .nav-container .sidebar-ul .item {
   margin-top: 1.8rem;
+}
+
+.sub-item {
+  margin-left: 0.5rem !important;
+}
+
+.mini-sub-item {
+  margin-left: 1rem !important;
 }
 
 .content {

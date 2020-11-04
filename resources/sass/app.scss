@@ -12,6 +12,8 @@ body{
     background-color:$bg-white;
 }
 
+
+
 .nav-container{
     padding-left:0px;
     .sidebar{
@@ -26,7 +28,13 @@ body{
      
       
     }
-
+    a{
+        text-decoration: none;
+        color:$dark-text;
+    }
+    a:hover{
+        color:$dark-hover-text;
+    }
     .sidebar-ul{
         list-style: none;
         padding-left:10%;
@@ -36,7 +44,14 @@ body{
         }
     }
 
-    
+}
+
+.sub-item{
+    margin-left:0.5rem !important;
+}
+
+.mini-sub-item{
+    margin-left:1rem !important;
 }
 
 .content{

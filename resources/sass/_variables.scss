@@ -1,6 +1,7 @@
 // Body
 $body-bg: #f8fafc;
-
+$dark-text: #0f0f0f;
+$dark-hover-text: #707070;
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
@@ -20,7 +21,7 @@ $cyan: #6cb2eb;
 
 $bg-white:#f7f7f7;
 $sidebar-bg:#f1eff3;
-$sidebar-txt:#0f0f0f;
+$sidebar-txt:$dark-text;
 
 $card-border:#e6e6e6;
 $card-bg:#f4f4f4;
