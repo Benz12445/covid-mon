@@ -1,7 +1,18 @@
 .card-custom{
-
+    width:90%;
+    margin:0 auto;
     background-color: $card-bg;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     border: 1px solid $card-border;
     border-radius: 15px;
+}
+
+.card-title{
+    font-size: 14pt;
+}
+
+.card-content
+{
+    text-align: center;
+    font-size: 42pt;
 }
