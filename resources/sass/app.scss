@@ -3,6 +3,44 @@
 
 // Variables
 @import 'variables';
-
+@import 'custom_components';
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+body{
+    background-color:$bg-white;
+}
+
+.nav-container{
+    padding-left:0px;
+    .sidebar{
+        float:left;
+        margin:0;
+        width:15%;
+        height: 100%;
+        background-color:$sidebar-bg;
+        color:$sidebar-txt;
+        padding-top:4rem;
+        padding-left:0.5rem;
+     
+      
+    }
+
+    .sidebar-ul{
+        list-style: none;
+        padding-left:10%;
+        .item{
+            margin-top:1.8rem;
+
+        }
+    }
+
+    
+}
+
+.content{
+    margin-top:1rem;
+}
+
+
