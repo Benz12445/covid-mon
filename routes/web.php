@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/api/{date}', 'ApiController@fetchByDate');
+Route::get('/country/{country}','WebpageController@index');
+
+Route::get('/api/{date}/country/{country}', 'ApiController@fetchDataFromAPIByDate');

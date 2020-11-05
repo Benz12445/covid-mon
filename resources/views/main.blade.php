@@ -10,6 +10,7 @@
      
     </head>
     <body>
+
         <div class="container-fluid nav-container">
             <aside class="sidebar">
                 <h1>Covid Monitor</h1>
@@ -59,14 +60,15 @@
         <div class="container-fluid content">
             <div class="row mt-5">
                 <div class="col-md"><h1>Overview <span class="text-muted">/ Global</span></h1> </div>
-             
+          
             </div>
             <div class="row mt-1">
                 <div class="col-md ">
                     <div class="card-custom">
                         <p class="card-title">Total Cases</p>
                         <p class="card-content">
-                            1150
+                          {{$total_case}}
+                        
                         </p>
                     </div>
                 </div>
@@ -74,19 +76,25 @@
                 <div class="col-md ">
                     <div class="card-custom">
                         <p class="card-title">New Cases</p>
-                        <p class="card-content">2200</p>
+                        <p class="card-content">
+                            {{$new_case}}
+                        </p>
                     </div></div>
 
                 <div class="col-md">
                     <div class="card-custom bg-success txt-light">
                         <p class="card-title">Recovery</p>
-                        <p class="card-content">500</p>
+                        <p class="card-content">
+                            {{$recovery}}
+                        </p>
                     </div></div>
 
                 <div class="col-md">
                     <div class="card-custom bg-dark txt-light">
                         <p class="card-title">Death</p>
-                        <p class="card-content">500</p>
+                        <p class="card-content">
+                            {{$death}}
+                        </p>
                     </div>
                 </div>
             </div>
