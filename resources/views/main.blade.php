@@ -10,7 +10,7 @@
      
     </head>
     <body>
-
+        
         <div class="container-fluid nav-container">
             <aside class="sidebar">
                 <h1>Covid Monitor</h1>

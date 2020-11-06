@@ -9,13 +9,17 @@
 
 
 body{
-    background-color:$bg-white;
+    background-color:$bg-white !important;
 }
 
 
 
 .nav-container{
     padding-left:0px;
+    .navbar{
+        background-color: $bg-white !important;
+        padding-top:20px;
+    }
     .sidebar{
         float:left;
         margin:0;
@@ -56,6 +60,10 @@ body{
 
 .content{
     margin-top:1rem;
+}
+.search-form
+{
+    margin:0 auto;
 }
 
 

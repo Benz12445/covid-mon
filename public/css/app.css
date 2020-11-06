@@ -10005,11 +10005,15 @@ h3 {
   }
 }
 body {
-  background-color: #f7f7f7;
+  background-color: #f7f7f7 !important;
 }
 
 .nav-container {
   padding-left: 0px;
+}
+.nav-container .navbar {
+  background-color: #f7f7f7 !important;
+  padding-top: 20px;
 }
 .nav-container .sidebar {
   float: left;
@@ -10046,4 +10050,8 @@ body {
 
 .content {
   margin-top: 1rem;
+}
+
+.search-form {
+  margin: 0 auto;
 }
