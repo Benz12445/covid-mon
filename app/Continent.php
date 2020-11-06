@@ -11,6 +11,6 @@ class Continent extends Model
 
     public function country()
     {
-       return $this->hasMany('\App\Country');
+       return $this->hasMany('\App\Country','con_id_fk');
     }
 }
