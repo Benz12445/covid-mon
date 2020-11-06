@@ -8,6 +8,7 @@ class Country extends Model
 {
     //
     protected $table = 'country';
+    protected $fillable = ["country"];
 
     public function continent()
     {
