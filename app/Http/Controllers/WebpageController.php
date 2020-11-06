@@ -16,7 +16,7 @@ class WebpageController extends Controller
         // $api = new CovidApi();
         // $str_res = $api->fetchDataFromAPIByDate($date,$country);
         // $data = json_decode($str_res);
-        // $parse_country = ucfirst($country);
+        $parse_country = ucfirst($country);
 
         // $total_case = $data->dates->$date->countries->$parse_country->today_confirmed;
         // $new_case = $data->dates->$date->countries->$parse_country->today_new_confirmed;
@@ -28,6 +28,6 @@ class WebpageController extends Controller
         $recovery = 0;
         $death = 0;
 
-       return view('main',["total_case"=> $total_case,"new_case"=>$new_case,"recovery"=>$recovery,"death"=>$death,"country"=>$country]);
+       return view('main',["total_case"=> $total_case,"new_case"=>$new_case,"recovery"=>$recovery,"death"=>$death,"country"=>$parse_country]);
     }
 }
