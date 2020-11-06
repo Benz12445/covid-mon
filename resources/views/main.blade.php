@@ -49,9 +49,11 @@
             </aside>
             <nav class="navbar navbar-expand-sm navbar-light bg-light">
             
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="input-search mr-sm-2" type="search" placeholder="Search">
-                    <button class="input-btn my-2 my-sm-0" type="submit">Search</button>
+                <form class="form-inline my-2 my-lg-0 search-form">
+                    <input class="input-search mr-sm-2" type="search" >
+                    <span><a href="">Search</a></span>
+
+                    <!-- <button class="input-btn my-2 my-sm-0" type="submit">Search</button> -->
                 </form>
             </nav>
         </div>
@@ -59,7 +61,7 @@
        
         <div class="container-fluid content">
             <div class="row mt-5">
-                <div class="col-md"><h1>Overview <span class="text-muted">/ Global</span></h1> </div>
+                <div class="col-md"><h1>Overview <span class="text-muted">/ {{$country}}</span></h1> </div>
           
             </div>
             <div class="row mt-1">

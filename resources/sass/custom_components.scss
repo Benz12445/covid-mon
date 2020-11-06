@@ -21,3 +21,15 @@
 .txt-light{
     color:#f7f7f7;
 }
+
+.search-form 
+{
+    input{
+        border:0px solid transparent;
+        background-color: transparent;
+        -webkit-appearance: none;
+        outline:none;
+    }
+    border-bottom:1px solid black;
+   
+}
