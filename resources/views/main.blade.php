@@ -10,38 +10,26 @@
      
     </head>
     <body>
-
+        
         <div class="container-fluid nav-container">
             <aside class="sidebar">
                 <h1>Covid Monitor</h1>
                <ul class="sidebar-ul">
                     <li class="item"><a data-toggle="collapse" href="#countries">Countries</a></li>
                     <div class="collapse" id="countries">
-                        <li class="sub-item"><a data-toggle="collapse" href="#affrica">Africa</a></li>
-                            <div class="collapse" id="affrica">
-                                <li class="mini-sub-item">asdasd</li>
-                                
-                            </div>
-                        <li class="sub-item">Asia</li>
-                            <div class="collapse" id="asia">
-                                <li class="mini-sub-item">aaaa</li>
-                                
-                            </div>
-                        <li class="sub-item">Europe</li>
-                            <div class="collapse" id="europe">
-                                <li class="mini-sub-item">asdasd</li>
-                                
-                            </div>
-                        <li class="sub-item">North America</li>
-                            <div class="collapse" id="north-america">
-                                <li class="mini-sub-item">asdasd</li>
-                                
-                            </div>
-                        <li class="sub-item">South America</li>
-                            <div class="collapse" id="south-america">
-                                <li class="mini-sub-item">asdasd</li>
-                                
-                            </div>
+        
+                        @foreach($continents as $a_country)
+                            <li class="sub-item"><a data-toggle="collapse" href="#{{str_replace(' ','-',strtolower($a_country->continent))}}">{{$a_country->continent}}</a></li>
+                            @foreach($a_country->country as $c_item)
+                              
+                                <div class="collapse" id="{{str_replace(' ','-',strtolower($a_country->continent))}}">
+                                    <li class="mini-sub-item"><a href="/country/{{$c_item->country}}">{{$c_item->country}}</a></li>
+                                    
+                                </div>
+                            @endforeach
+                        @endforeach
+                        
+                       
                     </div>
                     
                     <li class="item"><a href="">Statistic</a></li>
