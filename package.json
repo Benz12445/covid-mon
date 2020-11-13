@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "admin-lte": "^3.0.5",
+        "chart.js": "^2.9.4",
         "countries-list": "^2.5.6"
     }
 }
