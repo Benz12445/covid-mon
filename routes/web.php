@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/country/{country?}','WebpageController@index');
+Route::get('/country',function(){
+    return redirect('/country/global');
+});
+Route::get('/country/{country}','WebpageController@index');
 
 Route::get('/api/country/{country?}', 'ApiController@fetchDataFromAPIByDate');
 // Route::get('/api/country/{country?}/{date_begin}/{date_end}', 'ApiController@fetchDataFromAPIByDateRange');

@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Covid Monitor</title>
+       
         <script src="/js/app.js"></script>
         <link href="/css/app.css" rel="stylesheet">
-     
     </head>
     <body>
         <div class="container-fluid nav-container">
@@ -96,9 +96,47 @@
                 </div>
 
             </div>
-            
+         
+            <div class="row mt-5">
+                <div class="col-md">
+                    <table class="table">
+                        <thead>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Total Case</th>
+                            <th>New Case</th>
+                            <th>Recovery</th>
+                            <th>Death</th>
+                        </thead>
+                        <tbody>
+                            @php $i = 1;@endphp
+                            @foreach($table_data->dates as $index => $data)
+                                <tr>
+                                    <td>{{$i}}</td>
+                                    <td>{{Date('d-M-Y',strtotime($index))}}</td>
+                                    <td>{{$data->countries->$country->today_confirmed}}</td>
+                                    <td>{{$data->countries->$country->today_new_confirmed}}</td>
+                                    <td>{{$data->countries->$country->today_new_recovered}}</td>
+                                    <td>{{$data->countries->$country->today_deaths}}</td>
+                                    <td></td>
+                                </tr>
+                                @php $i++ @endphp
+                            @endforeach
+                            <tr></tr>
+                        </tbody>
+                       
+                    </table>
+                </div>
+                
+            </div>
         
         </div>
+        <div class="container">
+        
+        
+        </div>
+
+       
             
   
     </body>
