@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/',function(){
+    return redirect('/country/global');
+});
+
 Route::get('/country',function(){
     return redirect('/country/global');
 });
